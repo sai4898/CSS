@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To EdgeLedger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span> Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>The Sky Is The Limit</h1>
+            <p>Lorem ipsum dolor sit amet assitance</p>
+            <a href="#about" class="btn"><i class="fas fa-chevron-right"></i>Read More</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="icons bg-light">
+            <div class="flex-items">
+                <div>
+                    <i class="fas fa-university fa-2x
+                    "></i>
+                    <div>
+                        <h3>Investment Banking</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae.</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-book-reader fa-2x
+                    "></i>
+                    <div>
+                        <h3>Investment Book</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae.</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-pencil-alt fa-2x
+                    "></i>
+                    <div>
+                        <h3>Investment pencil</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestiae.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions flex-colums">
+            <div class="row">
+                <div class="columns">
+                    <div class="column-1">
+                        <img src="images/home/people.jpg" alt="people">
+                    </div>
+                    <div class="columns">
+                        <div class="column-2 btn-primary">
+                            <h4>What you are looking for</h4>
+                            <h2>We provide bespoke solutions</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae, natus officiis recusandae adipisci dolorum vitae.</p>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-chevron"></i>
+                                Read More
+                            </a>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="cases" class="cases flex-grid section-padding">
+            <header class="section-header">
+                <h4>This is what we do</h4>
+                <h2>Business cases</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facere.</p>
+            </header>
+            <div class="row">
+                <div class="column">
+                    <a href="images/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ispum dolor sit amet elit">
+
+                        <img src="images/cases/cases1.jpg" alt="cases">
+                    </a>
+                    <img src="images/cases/cases2.jpg" alt="cases">
+                </div>
+                <div class="column">
+                    <img src="images/cases/cases3.jpg" alt="cases">
+                    <img src="images/cases/cases4.jpg" alt="cases">
+                </div>
+                <div class="column">
+                    <img src="images/cases/cases5.jpg" alt="cases">
+                    <img src="images/cases/cases6.jpg" alt="cases">
+                </div>
+                <div class="column">
+                    <img src="images/cases/cases7.jpg" alt="cases">
+                    <img src="images/cases/cases8.jpg" alt="cases">
+                </div>
+            </div>
+        </section>
+
+        <div class="columns">
+            <div class="columns">
+                <div class="column-2 btn-primary">
+                    <h4>What you are looking for</h4>
+                    <h2>We provide bespoke solutions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae, natus officiis recusandae adipisci dolorum vitae.</p>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-chevron"></i>
+                        Read our blog 
+                    </a>
+                </div>
+                <div class="column-1">
+                    <img src="images/home/people.jpg" alt="people">
+                </div>
+        </div>
+    </div>
+    </main>
+     <script src="lightbox.min.js"></script>
+     <script>
+         const navbar = document.getElementById('navbar')
+         let scrolled = false
+
+         window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top')
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)'
+                }
+            } else {
+                navbar.classList.add('top')
+            }
+         }
+    </script> 
+</body>
+</html> 
